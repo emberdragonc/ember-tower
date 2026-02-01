@@ -224,6 +224,8 @@ export default function Game() {
 
     socket.on('auth_success', ({ user }) => {
       console.log('Authenticated:', user);
+      // Auto-join lobby after auth
+      socket.emit('join_room', 'lobby');
     });
 
     socket.on('room_joined', ({ roomId, room, users: roomUsers, position }) => {
