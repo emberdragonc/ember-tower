@@ -6,7 +6,7 @@ import { io, Socket } from 'socket.io-client';
 
 const TILE_WIDTH = 64;
 const TILE_HEIGHT = 32;
-const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || 'http://66.135.29.242:3001';
+const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || 'https://api.tower.ember.engineer';
 
 interface User {
   id: string;
